@@ -1,0 +1,34 @@
+name: Build Windows App
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PyInstaller
+        run: pip install pyinstaller
+
+      - name: Build Windows executable
+        run: pyinstaller --name tariff_clock --windowed --onedir src/project_chess_clock.py
+
+      - name: Zip Windows build
+        run: Compress-Archive -Path dist/tariff_clock -DestinationPath tariff_clock_windows_v0.1.0.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tariff_clock_windows_v0.1.0
+          path: tariff_clock_windows_v0.1.0.zip
