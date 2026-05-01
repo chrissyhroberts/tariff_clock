@@ -1,0 +1,3 @@
+timestamp,event,delta_seconds,balance_seconds,session_start,session_end,reason,edited,edit_reason
+2026-05-01 13:09:24,initial_allocation,10,10,,,Initial tariff allocation,false,
+2026-05-01 13:11:21,session,-115,-105,2026-05-01 13:09:26,2026-05-01 13:11:21,,false,
