@@ -29,7 +29,21 @@ from pathlib import Path
 from tkinter import messagebox, simpledialog, ttk
 from typing import Optional
 
-APP_TITLE = "Tariff Tracker"
+from tkinter import messagebox
+
+def show_about():
+    messagebox.showinfo(
+        "About Tariff Clock",
+        "Tariff Clock v0.1.0\n\n"
+        "A lightweight project time tracker with fixed tariffs.\n\n"
+        "Data stored locally:\n~/Documents/tariff_clock_projects\n\n"
+        "Chrissy Roberts\nLSHTM Global Health Analytics"
+    )
+    
+APP_NAME = "Tariff Clock"
+APP_VERSION = "0.1.0"
+APP_TITLE = f"{APP_NAME} v{APP_VERSION}"
+
 PROJECTS_DIR = Path.home() / "Documents" / "tariff_clock_projects"
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
 FIELDNAMES = [
@@ -214,6 +228,7 @@ class TariffTrackerApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title(APP_TITLE)
+        self._build_menu()
         self.geometry("980x600")
         self.minsize(820, 460)
         PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -240,6 +255,15 @@ class TariffTrackerApp(tk.Tk):
         self.load_projects()
         self.render_project_rows()
 
+    def _build_menu(self) -> None:
+        menubar = tk.Menu(self)
+        app_menu = tk.Menu(menubar, tearoff=0)
+        app_menu.add_command(label="About Tariff Clock", command=show_about)
+        app_menu.add_separator()
+        app_menu.add_command(label="Quit", command=self.on_close)
+        menubar.add_cascade(label="Tariff Clock", menu=app_menu)
+        self.config(menu=menubar)
+        
     def _build_ui(self) -> None:
         self.columnconfigure(0, weight=1)
         self.rowconfigure(1, weight=1)

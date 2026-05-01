@@ -32,6 +32,8 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    version='version.plist',
+    icon=['icon/icon.icns'],
 )
 coll = COLLECT(
     exe,
@@ -45,6 +47,6 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='tariff_clock.app',
-    icon=None,
+    icon='icon/icon.icns',
     bundle_identifier='uk.ac.lshtm.tariff-clock',
 )

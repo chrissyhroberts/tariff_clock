@@ -1262,11 +1262,11 @@
 		</data>
 		<key>Resources/base_library.zip</key>
 		<data>
-		qaAopMyfGkluTwnWfxX8uSjvqV8=
+		u73saUW0F/GrUTaA8Zv725whkSM=
 		</data>
-		<key>Resources/icon-windowed.icns</key>
+		<key>Resources/icon.icns</key>
 		<data>
-		eEHOuYpZLB0vKGVIWGZOh5rH8+o=
+		wDW+26D1dbUQauREk3VilpeDLZc=
 		</data>
 		<key>Resources/tcl8/8.4/platform-1.0.19.tm</key>
 		<data>
@@ -3955,14 +3955,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aKZwqUj3qgd+yXGUoL3y0VsxiFQ7FM4OvyXDxS3JTrE=
+			o/e5dfRyUxoU3Q51l3W2XWfIK4l95tfMmAnoU6VrdUE=
 			</data>
 		</dict>
-		<key>Resources/icon-windowed.icns</key>
+		<key>Resources/icon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQo7VuWRab4Phv4EEGmfQsyqFqDIXZgO8OtgaAMvCzY=
+			aM75vmA+OxeLWm8NU4v2wa8pYgsjSSZlXPApZVieczs=
 			</data>
 		</dict>
 		<key>Resources/lib-dynload</key>
