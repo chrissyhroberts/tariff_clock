@@ -1,4 +1,9 @@
-# Tariff Clock
+# Tariff Clock <img width="100" height="100" alt="icon" src="https://github.com/user-attachments/assets/b3f61c73-db41-4802-97ea-50fba14bc4af" />
+
+
+<img width="1085" height="491" alt="Screenshot 2026-05-01 at 14 17 23" src="https://github.com/user-attachments/assets/8d59a5a8-3886-40f2-bf48-afb0957655ba" />
+
+
 
 A lightweight desktop app for tracking project time against a fixed allocation.
 
@@ -142,6 +147,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
 ---
 
 ## Author
