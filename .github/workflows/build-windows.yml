@@ -22,7 +22,7 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build Windows executable
-        run: pyinstaller --name tariff_clock --windowed --onedir src/project_chess_clock.py
+        run: pyinstaller --noconfirm --clean --name tariff_clock --windowed --onedir src/project_chess_clock.py
 
       - name: Zip Windows build
         run: Compress-Archive -Path dist/tariff_clock -DestinationPath tariff_clock_windows_v0.1.0.zip
