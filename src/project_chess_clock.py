@@ -30,9 +30,8 @@ from tkinter import messagebox, simpledialog, ttk
 from typing import Optional
 
 APP_TITLE = "Tariff Tracker"
-PROJECTS_DIR = Path("projects")
+PROJECTS_DIR = Path.home() / "Documents" / "tariff_clock_projects"
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
-
 FIELDNAMES = [
     "timestamp",
     "event",
